@@ -53,12 +53,16 @@ table {
   border-spacing: 0; }
 
 html {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 20px;
   min-height: 100%;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   position: relative; }
+  @media only screen and (min-width: 640px) {
+    html {
+      font-size: 12px;
+      line-height: 16px; } }
 
 body.amazon {
   height: 100%;
@@ -78,19 +82,26 @@ body.amazon {
     body.amazon header img {
       display: block;
       margin: 0 auto;
-      padding: 28px 0 15px; }
+      padding: 28px 0 15px;
+      max-width: 100%; }
   body.amazon h1 {
     text-align: center;
     font-size: 50px;
     color: #222f3e;
-    padding: 45px 0; }
+    padding: 45px 10px; }
   body.amazon h3 {
     color: #30b1db;
     font-weight: 800;
     padding: 15px 0 5px;
     font-size: 14px; }
   body.amazon b {
-    font-weight: 800; }
+    margin-top: 17px;
+    margin-bottom: 6px;
+    display: block;
+    font-weight: 800;
+    line-height: 1.4; }
+  body.amazon ul li {
+    line-height: 1.4; }
   body.amazon .link {
     position: relative;
     display: inline-block;
@@ -109,43 +120,61 @@ body.amazon {
   body.amazon section {
     background: #f0f0f1;
     margin: 20px auto;
-    padding: 35px 0 25px;
-    max-width: 890px; }
+    padding: 35px 20px;
+    max-width: 100%; }
+    @media only screen and (min-width: 640px) {
+      body.amazon section {
+        padding: 35px 48px 25px 0;
+        max-width: 890px; } }
     @media (min-width: 768px) {
       body.amazon section .col-sm-3 {
         width: 20%; }
       body.amazon section .col-sm-9 {
         width: 80%; } }
-    body.amazon section .left-col img {
-      position: relative;
-      display: block;
-      margin: 0 auto; }
-    body.amazon section .left-col p {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 19px;
-      font-weight: bold;
-      color: #222f3e;
-      margin-top: 20px; }
-    body.amazon section:nth-child(1) .left-col {
-      position: relative;
-      top: 13px; }
+    body.amazon section .left-col {
+      margin-bottom: 20px; }
+      @media only screen and (min-width: 640px) {
+        body.amazon section .left-col {
+          position: relative;
+          left: 5px;
+          margin-bottom: 0; } }
+      body.amazon section .left-col img {
+        position: relative;
+        display: block;
+        margin: 0 auto; }
+      body.amazon section .left-col p {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 19px;
+        font-weight: bold;
+        color: #222f3e;
+        margin-top: 20px; }
+    @media only screen and (min-width: 640px) {
+      body.amazon section:nth-child(1) .left-col {
+        position: relative;
+        top: 13px; } }
+    @media only screen and (min-width: 640px) {
       body.amazon section:nth-child(1) .left-col img {
         position: relative;
-        left: 13px; }
-    body.amazon section:nth-child(2) .left-col {
-      position: relative;
-      top: 10px; }
+        left: 13px; } }
+    @media only screen and (min-width: 640px) {
+      body.amazon section:nth-child(2) .left-col {
+        position: relative;
+        top: 10px; } }
+    @media only screen and (min-width: 640px) {
       body.amazon section:nth-child(2) .left-col img {
         position: relative;
-        left: 19px; }
+        left: 19px; } }
     body.amazon section:nth-child(2) ul {
       position: relative;
       padding-left: 28px; }
       body.amazon section:nth-child(2) ul li {
         position: relative;
-        width: 50%;
-        float: left; }
+        width: 100%; }
+        @media only screen and (min-width: 640px) {
+          body.amazon section:nth-child(2) ul li {
+            width: 50%;
+            float: left; } }
         body.amazon section:nth-child(2) ul li:before {
           position: absolute;
           top: 4px;
@@ -162,33 +191,40 @@ body.amazon {
         clear: both;
         display: block;
         content: ''; }
-    body.amazon section:nth-child(3) .left-col {
-      position: relative;
-      top: 10px; }
+    @media only screen and (min-width: 640px) {
+      body.amazon section:nth-child(3) .left-col {
+        position: relative;
+        top: 10px; } }
     body.amazon section:nth-child(3) .link {
       font-size: 13px; }
-    body.amazon section:nth-child(4) {
-      padding: 30px 50px 8px 0; }
+    @media only screen and (min-width: 640px) {
+      body.amazon section:nth-child(4) {
+        padding: 30px 50px 8px 0; } }
+    @media only screen and (min-width: 640px) {
       body.amazon section:nth-child(4) .left-col {
         position: relative;
-        top: 13px; }
-      body.amazon section:nth-child(4) ul {
-        padding-left: 28px; }
-        body.amazon section:nth-child(4) ul li {
-          position: relative;
-          line-height: 1.4;
-          padding: 8px 0; }
-          body.amazon section:nth-child(4) ul li:before {
-            position: absolute;
-            top: 9px;
-            left: -21px;
-            width: 18px;
-            height: 15px;
-            clear: both;
-            display: block;
-            background: url("../images/arrow.png") no-repeat;
-            border-radius: 0;
-            content: ''; }
+        top: 13px; } }
+    body.amazon section:nth-child(4) ul {
+      padding-left: 28px; }
+      body.amazon section:nth-child(4) ul li {
+        position: relative;
+        font-weight: 400;
+        line-height: 1.6;
+        padding: 8px 0; }
+        @media only screen and (min-width: 640px) {
+          body.amazon section:nth-child(4) ul li {
+            line-height: 1.4; } }
+        body.amazon section:nth-child(4) ul li:before {
+          position: absolute;
+          top: 9px;
+          left: -21px;
+          width: 18px;
+          height: 15px;
+          clear: both;
+          display: block;
+          background: url("../images/arrow.png") no-repeat;
+          border-radius: 0;
+          content: ''; }
     body.amazon section ul {
       padding: 17px 0 13px 15px; }
       body.amazon section ul li {
@@ -209,6 +245,7 @@ body.amazon {
       font-weight: 800;
       color: #ff9900;
       font-size: 18px;
+      line-height: 1.4;
       text-transform: uppercase;
       padding: 10px 0; }
   body.amazon footer p {
@@ -226,7 +263,7 @@ body.amazon {
     letter-spacing: 1px;
     color: #ffffff;
     text-transform: uppercase;
-    max-width: 196px;
+    max-width: 210px;
     width: 100%;
     margin: 0 auto 10px;
     text-align: center;
@@ -245,4 +282,7 @@ body.amazon {
     display: block;
     margin-top: 42px;
     margin-bottom: 20px;
-    text-align: center; }
+    font-size: 8px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 0 10px; }
