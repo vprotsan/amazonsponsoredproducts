@@ -1,0 +1,248 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 12px;
+  line-height: 16px;
+  min-height: 100%;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  position: relative; }
+
+body.amazon {
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+  background: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  background-size: 120%; }
+  body.amazon p {
+    line-height: 1.4; }
+    body.amazon p a {
+      color: #30b1db;
+      font-weight: 800; }
+  body.amazon header {
+    background: #222f3e; }
+    body.amazon header img {
+      display: block;
+      margin: 0 auto;
+      padding: 28px 0 15px; }
+  body.amazon h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #222f3e;
+    padding: 45px 0; }
+  body.amazon h3 {
+    color: #30b1db;
+    font-weight: 800;
+    padding: 15px 0 5px;
+    font-size: 14px; }
+  body.amazon b {
+    font-weight: 800; }
+  body.amazon .link {
+    position: relative;
+    display: inline-block;
+    color: #30b1db;
+    font-weight: 800;
+    font-size: 14px;
+    margin: 15px 0 10px; }
+    body.amazon .link.arrow:after {
+      position: absolute;
+      content: '';
+      top: 2px;
+      right: -15px;
+      width: 10px;
+      height: 10px;
+      background: url("../images/link-arrow.png") no-repeat; }
+  body.amazon section {
+    background: #f0f0f1;
+    margin: 20px auto;
+    padding: 35px 0 25px;
+    max-width: 890px; }
+    @media (min-width: 768px) {
+      body.amazon section .col-sm-3 {
+        width: 20%; }
+      body.amazon section .col-sm-9 {
+        width: 80%; } }
+    body.amazon section .left-col img {
+      position: relative;
+      display: block;
+      margin: 0 auto; }
+    body.amazon section .left-col p {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 19px;
+      font-weight: bold;
+      color: #222f3e;
+      margin-top: 20px; }
+    body.amazon section:nth-child(1) .left-col {
+      position: relative;
+      top: 13px; }
+      body.amazon section:nth-child(1) .left-col img {
+        position: relative;
+        left: 13px; }
+    body.amazon section:nth-child(2) .left-col {
+      position: relative;
+      top: 10px; }
+      body.amazon section:nth-child(2) .left-col img {
+        position: relative;
+        left: 19px; }
+    body.amazon section:nth-child(2) ul {
+      position: relative;
+      padding-left: 28px; }
+      body.amazon section:nth-child(2) ul li {
+        position: relative;
+        width: 50%;
+        float: left; }
+        body.amazon section:nth-child(2) ul li:before {
+          position: absolute;
+          top: 4px;
+          left: -28px;
+          width: 18px;
+          height: 15px;
+          clear: both;
+          display: block;
+          background: url("../images/checkmark.png") no-repeat;
+          border-radius: 0;
+          content: ''; }
+      body.amazon section:nth-child(2) ul:after {
+        position: relative;
+        clear: both;
+        display: block;
+        content: ''; }
+    body.amazon section:nth-child(3) .left-col {
+      position: relative;
+      top: 10px; }
+    body.amazon section:nth-child(3) .link {
+      font-size: 13px; }
+    body.amazon section:nth-child(4) {
+      padding: 30px 50px 8px 0; }
+      body.amazon section:nth-child(4) .left-col {
+        position: relative;
+        top: 13px; }
+      body.amazon section:nth-child(4) ul {
+        padding-left: 28px; }
+        body.amazon section:nth-child(4) ul li {
+          position: relative;
+          line-height: 1.4;
+          padding: 8px 0; }
+          body.amazon section:nth-child(4) ul li:before {
+            position: absolute;
+            top: 9px;
+            left: -21px;
+            width: 18px;
+            height: 15px;
+            clear: both;
+            display: block;
+            background: url("../images/arrow.png") no-repeat;
+            border-radius: 0;
+            content: ''; }
+    body.amazon section ul {
+      padding: 17px 0 13px 15px; }
+      body.amazon section ul li {
+        position: relative;
+        padding: 5px 0;
+        color: #000000;
+        font-weight: 800; }
+        body.amazon section ul li:before {
+          position: absolute;
+          top: 8px;
+          content: '';
+          left: -13px;
+          width: 3px;
+          height: 3px;
+          border-radius: 5px;
+          background: #30b1db; }
+    body.amazon section h2 {
+      font-weight: 800;
+      color: #ff9900;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 10px 0; }
+  body.amazon footer p {
+    font-size: 18px;
+    text-align: center;
+    margin: 45px auto 40px; }
+    body.amazon footer p a {
+      font-weight: 800;
+      color: #30b1db; }
+  body.amazon footer .btn-default {
+    display: block;
+    background: #ff9900;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: uppercase;
+    max-width: 196px;
+    width: 100%;
+    margin: 0 auto 10px;
+    text-align: center;
+    padding: 18px 20px;
+    border-radius: 4px;
+    transition: all 0.2s linear; }
+    body.amazon footer .btn-default:hover {
+      text-decoration: none;
+      background: #e68a00; }
+  body.amazon footer small.small-text {
+    display: block;
+    margin: 0 auto;
+    font-style: italic;
+    text-align: center; }
+  body.amazon footer small.copyright {
+    display: block;
+    margin-top: 42px;
+    margin-bottom: 20px;
+    text-align: center; }
